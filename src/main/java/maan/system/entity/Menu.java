@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.List;
 
 @Table
 @Entity(name = "menu")
@@ -27,4 +28,8 @@ public class Menu implements Serializable {
 
     @Column(nullable = true)
     private String icon;
+
+    @JoinColumn(name = "menu_id")
+    @ManyToOne
+    private Menu menu;
 }
