@@ -30,6 +30,6 @@ public class Menu implements Serializable {
     private String icon;
 
     @JoinColumn(name = "menu_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Menu menu;
 }
