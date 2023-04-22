@@ -29,7 +29,7 @@ public class Menu implements Serializable {
     @Column(nullable = true)
     private String icon;
 
-    @JoinColumn(name = "menu_id")
+    @JoinColumn(name = "parent_menu_id")
     @ManyToOne(fetch = FetchType.LAZY)
-    private Menu menu;
+    private Menu subMenu;
 }
