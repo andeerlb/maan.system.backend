@@ -1,0 +1,12 @@
+server.port: 9596
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/maan
+    username: root
+    password: admin12345
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: false
+    show-sql: true
